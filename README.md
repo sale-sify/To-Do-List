@@ -68,5 +68,5 @@ Follow the localhost link in the terminal to open the app
 
 ## Author 
 
-From: Romain Sales
-For: ETNA School - C2WK - Vue.js / TypeScript
+ - From: Romain Sales
+ - For: ETNA School - C2WK - Vue.js / TypeScript
