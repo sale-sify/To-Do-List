@@ -54,13 +54,13 @@ Follow the localhost link in the terminal to open the app
 
 ## Project structure 
 
-src/
-├── components/      # Header, Footer, TaskList, Forms
-├── composables/     # useTasks.ts (task logic)
-├── types/           # task.ts (interfaces and enums)
-├── utils/           # id generator
-├── App.vue
-└── main.ts
+ - src/
+ - ├── components/      # Header, Footer, TaskList, Forms
+ - ├── composables/     # useTasks.ts (task logic)
+ - ├── types/           # task.ts (interfaces and enums)
+ - ├── utils/           # id generator
+ - ├── App.vue
+ - └── main.ts
 
 
 
