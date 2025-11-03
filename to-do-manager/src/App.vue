@@ -156,9 +156,7 @@ footer {
   inset: 0;
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   z-index: 1000;
 }
 
@@ -166,8 +164,10 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  margin: auto;
+  width: 200%;
   min-height: 100vh;
+  margin-left: 14rem;
 }
 
 .content {

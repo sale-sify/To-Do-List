@@ -38,8 +38,9 @@
 
 <style scoped>
 .ask-name-form {
-    width: 50%;
-    display: block;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 2rem;
@@ -72,7 +73,7 @@ input {
     padding: 10px;
     border: 1px solid var(--color-border);
     border-radius: 8px;
-    width: 80%;
+    width: 100%;
 }
 
 .ask-name-form form {
