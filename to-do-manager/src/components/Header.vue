@@ -1,14 +1,26 @@
+<!-- #######################################################################################
+##########    Header.vue - Composant d'en-tête de l'application To-Do Manager     ##########
+#########################################################################################-->
+
+
 <script setup lang="ts">
+
+// Props et Emits -> Recuperation du nom d'utilisateur et emission de l'evenement de reset
     defineProps<{ username: string }>();
+
     const emit = defineEmits<{
         (e: 'reset'): void;
     }>();
 
+// Logo To-Do Manager
     let src = './public/logo-todo-manager.png';
+
 </script>
 
 
+
 <template>
+
     <header class="header">
         <img :src alt="Logo To-Do Manager" class="logo-header" />
         <div class="username-title-box">
@@ -16,18 +28,25 @@
         </div>
         <button class="reset-app-button" @click="$emit('reset')">Reset App</button>     
     </header>
+
 </template>
 
+
+
 <style scoped>
+
 .header {
     width: 100%;
     padding-top: 60px;
 }
+
+/* Titre du site avec le nom de l'utilisateur */
 .username-title-box {
-    margin-top: 1rem;
     margin-bottom: 1rem;
     padding-bottom: 3rem;
 }
+
+/* Bouton de reset de l'application */
 .reset-app-button {
     position: absolute;
     top: 20px;
@@ -46,6 +65,7 @@
     box-shadow: inset 2px 2px 5px rgba(54, 54, 54, 0.753);
 }
 
+/* Logo du site */
 .logo-header {
     width: 150px;
     height: auto;
@@ -53,4 +73,5 @@
     top: -23px;
     left: 40px;
 }
+
 </style>
